@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="A blog preview card component built with HTML and CSS.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/css-reset.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -9,20 +10,22 @@
     <title>Blog Preview Card</title>
 </head>
 <body>
-    <article class="card">
-        <img class="illustration" src="assets/illustration-article.svg" alt="" aria-hidden="true">
-        <div class="text-content">
-            <header>
-                <p class="category-title">Learning</p>
-                <p class="published-date">Published <time datetime="2023-12-21">21 Dec 2023</time></p>
-                <h1 class="heading">HTML & CSS foundations</h1>
-            </header>
-            <p class="regular-paragraph">These languages are the backbone of every website, defining structure, content, and presentation.</p>
-        </div>
-        <div class="author-container">
-            <img class="avatar" src="assets/image-avatar.webp" alt="Avatar of Greg Hooper">
-            <p class="author">Greg Hooper</p>
-        </div>
-    </article>
+    <main>
+        <article class="card">
+            <img class="illustration" src="assets/illustration-article.svg" alt="" aria-hidden="true">
+            <div class="text-content">
+                <header>
+                    <p class="category-title">Learning</p>
+                    <p class="published-date">Published <time datetime="2023-12-21">21 Dec 2023</time></p>
+                    <h1 class="heading">HTML & CSS foundations</h1>
+                </header>
+                <p class="regular-paragraph">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+            </div>
+            <div class="author-container">
+                <img class="avatar" src="assets/image-avatar.webp" alt="Avatar of Greg Hooper">
+                <p class="author">Greg Hooper</p>
+            </div>
+        </article>
+    </main>
 </body>
 </html>
