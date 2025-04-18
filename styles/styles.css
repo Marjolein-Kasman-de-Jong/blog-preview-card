@@ -5,7 +5,7 @@
 /* Colors */
 
 :root {
-    --Yellow: hsl(47, 88%, 63%);   
+    --yellow: hsl(47, 88%, 63%);   
     --white: hsl(0, 0%, 100%);
     --gray-500: hsl(0, 0%, 42%); 
     --gray-950: hsl(0, 0%, 7%);
@@ -24,7 +24,7 @@ html {
     font-weight: 800;
     line-height: 150%;
 
-    @media screen and (min-width: 375px) {
+    @media screen and (min-width: 376px) {
         font-size: 1.5rem;
     }
 }
@@ -35,7 +35,7 @@ html {
     font-weight: 500;
     line-height: 150%;
 
-    @media screen and (min-width: 375px) {
+    @media screen and (min-width: 376px) {
         font-size: 1rem;
     }
 }
@@ -46,7 +46,7 @@ html {
     font-weight: 800;
     line-height: 150%;
 
-    @media screen and (min-width: 375px) {
+    @media screen and (min-width: 376px) {
         font-size: 0.875rem;
     }
 }
@@ -57,7 +57,7 @@ html {
     font-weight: 500;
     line-height: 150%;
 
-    @media screen and (min-width: 375px) {
+    @media screen and (min-width: 376px) {
         font-size: var(0.875rem);
     }
 }
@@ -67,4 +67,43 @@ html {
     font-size: 0.875rem;
     font-weight: 800;
     line-height: 150%;
+}
+
+/* Background */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+}
+
+/* Card */
+
+.card {
+    width: 87.2%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: var(--white);
+    border-radius: 20px;
+    border: 1px solid var(--gray-950);
+    overflow: clip;
+
+    @media screen and (min-width: 376px) {
+        max-width: 384px;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        header {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
 }
