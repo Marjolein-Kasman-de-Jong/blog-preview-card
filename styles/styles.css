@@ -106,6 +106,7 @@ main {
     box-shadow: 8px 8px 0px 0px #000;
 
     @media screen and (min-width: 376px) {
+        width: unset;
         max-width: 384px;
     }
 
