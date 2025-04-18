@@ -23,9 +23,17 @@ html {
     font-size: 1.25rem;
     font-weight: 800;
     line-height: 150%;
+    transition: color ease-in-out 300ms;
 
     @media screen and (min-width: 376px) {
         font-size: 1.5rem;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            cursor: pointer;
+            color: var(--yellow);
+        }
     }
 }
 
@@ -90,9 +98,14 @@ body {
     border-radius: 20px;
     border: 1px solid var(--gray-950);
     overflow: clip;
+    box-shadow: 8px 8px 0px 0px #000;
 
     @media screen and (min-width: 376px) {
         max-width: 384px;
+    }
+
+    .illustration {
+        border-radius: 10px;
     }
 
     .text-content {
@@ -104,6 +117,24 @@ body {
             display: flex;
             flex-direction: column;
             gap: 12px;
+
+            .category-title {
+                max-width: fit-content;
+                padding: 4px 12px;
+                border-radius: 4px;
+                background-color: var(--yellow);
+            }
+        }
+    }
+    
+    .author-container {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+
+        .avatar {
+            width: 32px;
+            height: 32px;
         }
     }
 }
