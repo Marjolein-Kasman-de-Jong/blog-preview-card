@@ -1,6 +1,20 @@
 /* Project styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@font-face {
+    font-family: 'Figtree';
+    src: url('../assets/fonts/Figtree-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('../assets/fonts/Figtree-ExtraBold.ttf') format('ttf');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* Colors */
 
